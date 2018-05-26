@@ -6,6 +6,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <script src="./javascript/script.js"></script>
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
         <!-- Compiled and minified JavaScript -->
@@ -28,10 +29,14 @@
             <div class="detail-icon-container center-align">
                 <i class="material-icons">details</i>
             </div>
-            <h2 class="m-l-10">Services</h2>
+            <h2 class="services pad-20">
+                Services
+                <i class="material-icons">format_quote</i>
+            </h2>
+           
             <div class="services-container">
                 <div class="row">
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m6 l6 pad-20">
                        <h3>What is Lorem Ipsum</h3> 
                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus risus, ultrices at turpis in, tempor efficitur diam. Phasellus eros tortor, fringilla a sollicitudin quis, tempus vitae tellus. In venenatis sagittis eleifend. Suspendisse vitae convallis lorem. In quis mollis odio. Curabitur semper urna ex, in maximus eros varius sit amet. Donec eu sapien neque. Quisque consectetur placerat neque eget ultricies. Praesent vel aliquam quam, a efficitur nunc. Etiam eu quam et ante rutrum scelerisque. Nunc aliquam consequat sem a consequat. Suspendisse scelerisque tincidunt aliquet. Quisque feugiat laoreet dolor a convallis. Maecenas nunc erat, congue eu tempus eu, congue ac elit.</p>
                     </div>
@@ -40,7 +45,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m6 l6 pad-20">
                         <h3>What is Lorem Ipsum</h3> 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus risus, ultrices at turpis in, tempor efficitur diam. Phasellus eros tortor, fringilla a sollicitudin quis, tempus vitae tellus. In venenatis sagittis eleifend. Suspendisse vitae convallis lorem. In quis mollis odio. Curabitur semper urna ex, in maximus eros varius sit amet. Donec eu sapien neque. Quisque consectetur placerat neque eget ultricies. Praesent vel aliquam quam, a efficitur nunc. Etiam eu quam et ante rutrum scelerisque. Nunc aliquam consequat sem a consequat. Suspendisse scelerisque tincidunt aliquet. Quisque feugiat laoreet dolor a convallis. Maecenas nunc erat, congue eu tempus eu, congue ac elit.</p>
                     </div>
@@ -51,18 +56,30 @@
             </div>
         </div>
         <footer class="page-footer bg-primary">
-            <div class="container">
+            <div class="footer-content">
                 <div class="row">
-                    <div class="col l6 s12">
+                    <div class="col s12 m6 l6 ">
                         <h5 class="white-text">D'Dental Center</h5>
-                        <p class="grey-text text-lighten-4">
-                            <i class="material-icons">location_on</i>
-                            Almond Dr, Bacoor, Cavite
-                        </p>
-                        <p class="grey-text text-lighten-4">
-                            <i class="material-icons">stay_current_portrait</i>
-                            09267015791
-                        </p>
+                        <table>
+                            <tr>
+                                <td><i class="material-icons">location_on</i></td> 
+                                <td>Almond Dr, Bacoor, Cavite</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">schedule</i></td>
+                                <td>
+                                    Monday - Friday<br>
+                                    10:00 AM - 6:00 PM
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">stay_current_portrait</i></td>
+                                <td>+63905-555-5555</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                        <div id="map"></div>
                     </div>
                 </div>
             </div>
@@ -72,5 +89,8 @@
                 </div>
             </div>
         </footer>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS1uTQ62P8qE6jREaZpgYk8FdEc3IDz20&callback=initMap">
+        </script>
     </body>
 </html>

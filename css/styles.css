@@ -16,8 +16,6 @@ nav {
 }
 
 
-
-
 .nav-sub-message {
     line-height: 1.8em;
     width: 50%;
@@ -30,9 +28,26 @@ nav {
     margin-top: 20px;
 }
 
+
 .detail-icon-container i {
     font-size: 75px !important;
     color: #c741ad;
+}
+
+.services i {
+    font-size: 70px;
+    color: #c741ad;
+}
+
+.footer-content {
+    width: 80%;
+    margin: auto;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
 }
 
 /* helpers */
